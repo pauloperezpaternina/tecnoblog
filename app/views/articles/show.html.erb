@@ -1,10 +1,11 @@
 <p>
 <strong>Titulo:</strong>
-<%= @articulo.title %>
+<%= @article.title %>
 </p>
 <p>
   <strong>Mensaje:</strong>
-  <%= @articulo.text %>
+  <%= @article.text %>
 </p>
 
-<%= link_to 'Otro Articulo', new_article_path %>
+<%= link_to '<', articles_path %> | <%= link_to 'Otro Articulo', new_article_path %>
+| <%= link_to 'Editar', edit_article_path(@article) %>
