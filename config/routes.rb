@@ -10,6 +10,11 @@ Rails.application.routes.draw do
     root 'bienvenida#index'
   end
 
+  #scope "(:locale)", locale: /en|nl/ do
+  #   resources :articles
+
+  #end
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

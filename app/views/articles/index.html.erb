@@ -12,6 +12,7 @@
       <td><%= article.text %></td>
       <td><%= link_to 'Ver', article_path(article) %></td>
        <td><%= link_to 'Editar', edit_article_path(article) %></td>
+       <td><%= link_to 'Eliminar', { :action => :destroy, :id => article.id }, :method => :delete, :data => { :confirm => 'Seguro?' } %></td>
     </tr>
   <% end %>
 </table>
