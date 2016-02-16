@@ -1,11 +1,12 @@
+<%= render 'header' %>
 <p>
-<strong>Titulo:</strong>
+<strong><%=t :title %>:</strong>
 <%= @article.title %>
 </p>
 <p>
-  <strong>Mensaje:</strong>
+  <strong><%=t :text %>:</strong>
   <%= @article.text %>
 </p>
 
-<%= link_to '<', articles_path %> | <%= link_to 'Otro Articulo', new_article_path %>
-| <%= link_to 'Editar', edit_article_path(@article) %>
+<%= link_to t('back'), articles_path %> | <%= link_to t('new_post'), new_article_path %>
+| <%= link_to t('edit'), edit_article_path(@article) %>

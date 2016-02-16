@@ -1,18 +1,19 @@
-<h1>Listar Articulos</h1>
-<%= link_to 'Nuevo Articulo', new_article_path %>
+<%= render 'header' %>
+<h1><%=t :list_article %></h1>
+<%= link_to t('title_new'), new_article_path %>
 <table>
   <tr>
-    <th>Titulo</th>
-    <th>Mensaje</th>
+    <th><%=t ('title') %></th>
+    <th><%=t ('text') %></th>
   </tr>
 
   <% @articulo.each do |article| %>
     <tr>
       <td><%= article.title %></td>
       <td><%= article.text %></td>
-      <td><%= link_to 'Ver', article_path(article) %></td>
-       <td><%= link_to 'Editar', edit_article_path(article) %></td>
-       <td><%= link_to 'Eliminar', { :action => :destroy, :id => article.id }, :method => :delete, :data => { :confirm => 'Seguro?' } %></td>
+      <td><%= link_to t('view'), article_path(article) %></td>
+       <td><%= link_to t('edit'), edit_article_path(article) %></td>
+       <td><%= link_to t('delete'), { :action => :destroy, :id => article.id }, :method => :delete, :data => { :confirm => t('msg.textmsg') } %></td>
     </tr>
   <% end %>
 </table>

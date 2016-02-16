@@ -21,3 +21,19 @@
 
 es:
   hello: "Hola Mundo"
+  msg_system: "Sistema de Mensajes"
+  text_home: "Mi Blog tecnológico"
+  home: "Inicio"
+  back: "Antras"
+  title: "Titulo"
+  text: "Mensaje"
+  save: "Guardar"
+  view: "Ver"
+  edit: "Editar"
+  delete: "Quitar"
+  msg:
+    textmsg: "Seguro?"
+  title_new: "Nuevo Articulo"
+  edit_post: "Editar Publicación"
+  new_post: "Nueva Publicación"
+  list_article: "Listar Articulos"

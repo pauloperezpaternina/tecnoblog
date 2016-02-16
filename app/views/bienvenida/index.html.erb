@@ -1,2 +1,7 @@
-<h1>Sistema de Mensajes</h1>
-<%= link_to 'Mi Blog tecnológico', controller: 'articles' %>
+<%= render 'articles/header' %>
+
+<h1><%=t :msg_system %></h1>
+<%= link_to t('text_home'), controller: 'articles' %>
+<br/>
+<br/>
+Saludo: <%=t :hello %>

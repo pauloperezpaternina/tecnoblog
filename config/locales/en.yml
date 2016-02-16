@@ -21,3 +21,19 @@
 
 en:
   hello: "Hello world"
+  msg_system: "Messaging System"
+  text_home: "My Techno Blog"
+  home: "Home"
+  back: "Back"
+  title: "Title"
+  text: "Text"
+  save: "Save"
+  view: "View"
+  edit: "Edit"
+  delete: "Delete"
+  msg:
+    textmsg: "Are you Sure?"
+  title_new: "New Article"
+  edit_post: "Edit Post"
+  new_post: "New Post"
+  list_article: "List Articles"
