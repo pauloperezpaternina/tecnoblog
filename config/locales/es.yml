@@ -20,6 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 es:
+  spanish: "Español"
+  english: "Ingles"
+  languajes:
+    lang: "Idioma"
+    es: "Español"
+    en: "English"
   hello: "Hola Mundo"
   msg_system: "Sistema de Mensajes"
   text_home: "Mi Blog tecnológico"
@@ -37,3 +43,12 @@ es:
   edit_post: "Editar Publicación"
   new_post: "Nueva Publicación"
   list_article: "Listar Articulos"
+  error_list: " el sistema encontro los siguientes errores"
+  activerecord:
+    errors:
+       models:
+           article:
+             attributes:
+                 title:
+                   blank: "Blanco"
+                   too_short: "Corto"

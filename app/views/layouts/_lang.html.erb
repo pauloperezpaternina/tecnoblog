@@ -1,0 +1,11 @@
+<p>
+  <!--<select name="lang">
+
+       <option value="es"><%=t :spanish %></option>
+       <option value="en"><%=t :english %></option>
+
+   </select-->
+<%= link_to_unless I18n.locale == :es, "Español", locale: :es %>
+|
+<%= link_to_unless I18n.locale == :en, "English", locale: :en %>
+</p>

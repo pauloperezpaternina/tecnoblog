@@ -6,7 +6,7 @@ Rails.application.routes.draw do
  get '/:locale' => 'bienvenida#index'
   # You can have the root of your site routed with "root"
   Tecnoblog::Application.routes.draw do
-    resources :articles
+
     root 'bienvenida#index'
   end
   scope "(:locale)", locale: /es|en/ do

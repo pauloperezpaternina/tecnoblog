@@ -20,6 +20,12 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  spanish: "Spanish"
+  english: "English"
+  languajes:
+    lang: "Languaje"
+    es: "Español"
+    en: "English"
   hello: "Hello world"
   msg_system: "Messaging System"
   text_home: "My Techno Blog"
@@ -37,3 +43,12 @@ en:
   edit_post: "Edit Post"
   new_post: "New Post"
   list_article: "List Articles"
+  error_list: " prohibited this article from being saved"
+  activerecord:
+    errors:
+       models:
+           article:
+             attributes:
+                 title:
+                   blank: "can't be blank"
+                   too_short: "short"
